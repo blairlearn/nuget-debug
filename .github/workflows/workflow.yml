@@ -34,7 +34,7 @@ jobs:
         ## using latest LTS releases - also it MUST be the SDK version.
 
       - name: Setup dotnet
-        uses: actions/setup-dotnet@v1
+        uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '3.1.x'
 
@@ -104,7 +104,7 @@ jobs:
 
         ## using latest LTS releases - also it MUST be the SDK version.
       - name: Setup dotnet
-        uses: actions/setup-dotnet@v1
+        uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '3.1.x'
 
@@ -257,7 +257,7 @@ jobs:
 
         ## using latest LTS releases - also it MUST be the SDK version.
       - name: Setup dotnet
-        uses: actions/setup-dotnet@v1
+        uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '3.1.x'
           source-url: "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json"
