@@ -270,6 +270,8 @@ jobs:
         # repository where the build is taking place matches the one in the .csproj files' <RepositoryUrl> element.
       - name: Publish NuGet package for ${{matrix.package}}
         run: |
+          pwd
+          ls -lh
           dotnet nuget push ./*.nupkg
         shell: bash
 
